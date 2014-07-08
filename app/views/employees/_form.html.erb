@@ -1,0 +1,52 @@
+<%= simple_form_for @employee do |f| %>
+	<p>
+		<%= f.input :first_name%><br>
+	
+	</p>
+	<p>
+		<%= f.input :last_name%><br>
+		
+	</p>
+	<p>
+		<%= f.input :email%><br>
+		
+	</p>
+	<p>
+		<%= f.input :password%><br>
+		
+	</p>
+	<p>
+		<%= f.input :confirm_password%><br>
+		
+	</p>
+	<p>
+		<%= f.select :location, options_for_select([["Select state"], "kerala", "tamilnadu","karnataka"]) %>
+	</p>
+	
+	<p>
+	<%= f.label :languages %><br>
+		<%= f.check_box :languages %>english
+		<%= f.check_box :languages %>hindi
+		<%= f.check_box :languages %>malayalam
+		<%= f.check_box :languages %>tamil
+	</p>
+	<p>
+		<%= f.input :phone_number %><br>
+		
+	</p>
+	
+	<p>
+		<%= f.input :date_of_birth,:start_year=>1900%><br>
+		
+	</p>
+	<p>
+		<%= f.input :address %><br>
+		
+	</p>
+	<p>
+		<%= f.input :pincode %><br>
+		
+	<p>
+		<%= f.submit%>
+	</p>
+<%end%>

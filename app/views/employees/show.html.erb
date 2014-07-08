@@ -1,0 +1,52 @@
+<h1>showing Employee</h1>
+
+<p>
+	<strong>first_name:</strong>
+	<%= @employee.first_name %>
+</p>
+<p>
+	<strong>last_name:</strong>
+	<%=@employee.last_name%>
+</p>
+<p>
+	<strong>email:</strong>
+	<%=@employee.email%>
+</p>
+<p>
+	<strong>password:</strong>
+	<%=@employee.password%>
+</p>
+<p>
+	<strong>confirm_password:</strong>
+	<%=@employee.confirm_password%>
+</p>
+<p>
+	<strong>location:</strong>
+	<%=@employee.location%>
+</p>
+<p>
+	<strong>gender:</strong>
+	<%=@employee.gender%>
+</p>
+<p>
+	<strong>languages:</strong>
+	<%=@employee.languages%>
+</p>
+<p>
+	<strong>phone_number:</strong>
+	<%=@employee.phone_number%>
+</p>
+<p>
+	<strong>date_of_birth:</strong>
+	<%=@employee.date_of_birth%>
+</p>
+<p>
+	<strong>address:</strong>
+	<%=@employee.address%>
+</p>
+<p>
+	<strong>pincode:</strong>
+	<%=@employee.pincode%>
+</p>
+<%= link_to 'Back', employees_path %>
+ <%= link_to 'Edit', edit_employee_path(@employee) %>
